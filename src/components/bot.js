@@ -1,6 +1,9 @@
 import React from 'react';
 import { Container , Form , Row , Col , Button , Badge } from 'reactstrap';
 import './css/main.css';
+import { BiMenuAltLeft } from "react-icons/bi";
+
+
 const Bot=()=>{
     return (
         <>
@@ -14,7 +17,10 @@ const Bot=()=>{
                     <header className="top">
                             <div>
                                 <span>
-                                    Right
+                                    <h2>
+                                    <BiMenuAltLeft/>
+                                    
+                                    </h2>
                                 </span>
                                 <span>
                                     Left
@@ -22,8 +28,8 @@ const Bot=()=>{
                             </div>
                     </header>
                     <Container>
-                        <div>
-                            
+                        <div className="botMsg">
+                            <small>hello i am soHealthy , your health chatbot</small>
                         </div>
 
 

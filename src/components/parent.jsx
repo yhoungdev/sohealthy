@@ -2,6 +2,8 @@ import React from 'react'
 import './css/main.css';
 import { Container , Row , Col , Buuton  , Badge , Card ,CardText, CardFooter , CardTitle , CardBody} from 'reactstrap'
 import { Link } from 'react-router-dom';
+import { HiChatAlt2 } from "react-icons/hi";
+import { MdLocalHospital } from "react-icons/md";
 const Main_page=()=>{
     return(
         <>
@@ -22,7 +24,9 @@ const Main_page=()=>{
                             <Link to="bot">
                                 <CardBody className="text-center">
                                 <CardTitle>
-                                  Chat bot
+                                  <span className="emo">
+                                   <HiChatAlt2/>
+                                  </span>
                                 </CardTitle>
                                 <CardText><small className="text-muted">Chat with bot</small></CardText>
                               </CardBody>
@@ -35,9 +39,11 @@ const Main_page=()=>{
                           <Card>
                           <CardBody className="text-center">
                             <CardTitle>
-                              Chat bot
+                                <span className="emo"> 
+                                  <MdLocalHospital/>
+                                </span>
                             </CardTitle>
-                            <CardText>chat with bot</CardText>
+                            <CardText>connect with a Doctor </CardText>
                           </CardBody>
                         </Card>
                         </Col>
