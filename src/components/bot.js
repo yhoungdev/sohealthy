@@ -22,7 +22,9 @@ const Bot=()=>{
                             </div>
                     </header>
                     <Container>
-                        
+                        <div>
+                            
+                        </div>
 
 
 

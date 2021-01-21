@@ -6,7 +6,9 @@ const Auth=()=>{
            <Container>
                <div className="content">
                 {/* Google Oauth button */}
-                <button>sign in with google </button>
+               
+                <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
                </div>
            </Container>
         </div>
