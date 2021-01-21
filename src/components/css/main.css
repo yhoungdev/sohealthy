@@ -1,0 +1,52 @@
+.hold {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hold .middle {
+  font-size: 20px;
+}
+
+.hold .middle .btn {
+  margin: 1.5em;
+  padding: 1em;
+  background-color: #3D42AD;
+  width: 50%;
+}
+
+.middles {
+  height: 100vh;
+  border: 1px solid grey;
+}
+
+.middles header {
+  background-color: #3D42AD;
+  height: 18em;
+  border-radius: 0 0 25px 25px;
+  color: white;
+}
+
+.top {
+  background-color: #3D42AD;
+}
+
+.top div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */

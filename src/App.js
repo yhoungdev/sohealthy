@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import {Button} from 'reactstrap'
+import './components/bootstrap.css'
+import Index from './components/main'
+import Case from './components/case'
+import Auth from './components/auth'
+import Main_page from './components/parent'
+import Bot from './components/bot'
+import Err from './components/err'
+import {BrowserRouter as Router , Route , Switch} from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Index}/>
+          <Route exact path="/bot" component={Bot}/>
+          <Route exact path="/auth" component={Auth}/>
+          <Route exact path="/case" component={Case}/>
+          <Route exact path="/parent" component={Main_page}/>
+          <Route component={Err}/>
+        </Switch>
+      </Router>
     </div>
   );
 }
