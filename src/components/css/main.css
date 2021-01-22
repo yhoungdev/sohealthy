@@ -25,7 +25,6 @@
 
 .middles {
   height: 100vh;
-  border: 1px solid grey;
 }
 
 .middles header {
@@ -33,6 +32,15 @@
   height: 18em;
   border-radius: 0 0 25px 25px;
   color: white;
+}
+
+.middles h6 {
+  font-size: 3em;
+  cursor: pointer;
+}
+
+.middles .emo {
+  font-size: 35px;
 }
 
 .top {
@@ -48,5 +56,140 @@
           justify-content: space-between;
   padding: 1em;
   color: white;
+}
+
+.botMsg {
+  background-color: rgba(128, 128, 128, 0.507);
+  border-radius: 4px;
+  width: 40%;
+  margin-top: 1em;
+  padding: 1em;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.features {
+  padding: 3em 1em;
+  -webkit-box-shadow: 2px 3px 9px rgba(165, 165, 165, 0.267);
+          box-shadow: 2px 3px 9px rgba(165, 165, 165, 0.267);
+}
+
+.card-1 {
+  color: grey;
+  border-radius: 15px;
+}
+
+.card-1 .titleName {
+  font-weight: 450;
+  font-size: 16px;
+  color: green;
+  font-weight: 500;
+}
+
+.card-1 svg {
+  font-size: 28px;
+  color: green;
+}
+
+.card-2 {
+  color: rgba(0, 0, 255, 0.137);
+  border-radius: 18px;
+}
+
+.card-2 svg {
+  font-size: 28px;
+  color: #191B47;
+}
+
+.card-2 .titleName {
+  color: #191B47;
+  font-weight: 500;
+}
+
+.parent {
+  background-color: #fff;
+}
+
+.card {
+  -webkit-box-shadow: 2px 3px 9px rgba(165, 165, 165, 0.267);
+          box-shadow: 2px 3px 9px rgba(165, 165, 165, 0.267);
+  border-radius: 18px;
+}
+
+.sidebar {
+  background-color: #191B47;
+  position: absolute;
+  left: 0;
+  width: 40%;
+  height: 100vh;
+  z-index: 1;
+  color: white;
+  padding-left: 1em;
+  padding-top: 2em;
+  opacity: 0.9;
+  -webkit-transition: ease-in 2.5s;
+  transition: ease-in 2.5s;
+  -webkit-transition-delay: 4s;
+          transition-delay: 4s;
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.sidebar ul li {
+  margin-top: 9em;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sidebar h3 {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  float: right;
+  padding-right: 1em;
+  cursor: pointer;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 1em;
+}
+
+footer .inbox {
+  width: 25em;
+}
+
+.mess {
+  color: white;
+  float: right;
+  clear: both;
+  background-color: #7077f0c5;
+  width: auto;
+  padding-right: 1em;
+  padding-left: 1em;
+  border-radius: 8px;
+  margin-top: 6px;
+}
+
+.res {
+  color: white;
+  float: left;
+  clear: both;
+  background-color: #3be424c5;
+  width: auto;
+  padding-right: 1em;
+  padding-left: 1em;
+  border-radius: 8px;
+  margin-top: 6px;
+}
+
+/* on small phones hide the other columns */
+@media screen and (min-width: 200px) and (max-width: 600px) {
+  .first, .last {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
