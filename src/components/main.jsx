@@ -13,7 +13,7 @@ const Index=()=>{
                         <div className="text-center middle">
                             <span>
                                 <text-muetd>
-                                    No more about your health and connect with a doctor with Thomus
+                                    Know more about your health and connect with a doctor with Thomus
                                 </text-muetd>
                                 <br/>
                                 <Link to="auth">

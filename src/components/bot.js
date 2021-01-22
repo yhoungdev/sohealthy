@@ -25,7 +25,7 @@ const Bot=()=>{
         // the bot reply 
         const botReply=(bt)=>{
            let hello=document.createElement('p');
-           let wr=document.createTextNode('ooh my butiful lova this song na you i sing am for i cant explain how i feel deep inside ooh my love is real my beautiful gitl ')
+           let wr=document.createTextNode(' i will connect you with a doctor ')
             hello.appendChild(wr)
             app.appendChild(hello)
             hello.classList.add('res')
