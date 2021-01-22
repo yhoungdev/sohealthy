@@ -2,6 +2,8 @@ import React from 'react';
 import { Container , Form , Row , Col , Button , Badge , Input} from 'reactstrap';
 import './css/main.css';
 import { BiMenuAltLeft } from "react-icons/bi";
+import {MdArrowBack} from "react-icons/md"
+import {RiSendPlane2Fill} from "react-icons/ri"
 
 
 const Bot=()=>{
@@ -60,12 +62,12 @@ const Bot=()=>{
                             <div>
                                 <span>
                                     <h2>
-                                    <BiMenuAltLeft/>
+                                    <MdArrowBack/>
                                     
                                     </h2>
                                 </span>
                                 <span>
-                                    Left
+                                      <BiMenuAltLeft/>
                                 </span>
                             </div>
                     </header>
@@ -84,6 +86,7 @@ const Bot=()=>{
                         <footer>
                             <Form onSubmit={e=>e.preventDefault()}>
                                 <Input className="inbox"/>          
+                                <RiSendPlane2Fill/>
                                 <button onClick={user}>click</button>               
                               </Form>
                         </footer>
