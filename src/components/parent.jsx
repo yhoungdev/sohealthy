@@ -27,38 +27,38 @@ const Main_page=()=>{
                     <h4 className="text-center">FEATURES</h4>
                   <Row>
                      <Col className="col-12 ">
+                        <Link to="doctor">
                         <Card className="features card-1">
                         <div>
                             <FaUserNurse/>
                             <small className="ml-2 titleName">
-                              CONNECT WITH S DOCTOR
+                              CONNECT WITH OTHER DEVELOPERS 
                             </small>
                             <br/>
                             <small>
-                               You can connect with a doctor , to make your complains 
+                               Meet and connect with people with like mind around the world 
                             </small>
 
                         </div>
-                        </Card>
-
-                        
+                        </Card>  
+                          </Link> 
                     </Col>
                           {/* other col */}
                      <Col className="col-12 mt-3">
+                        <Link to="bot">
                         <Card className="features card-2">
                             <div>
                                <MdChatBubble/>
                                <small className="titleName ml-2">
-                                    CHAT WITH HEALTH BOT
+                                    CHAT WITH  BOT
                                  </small>  
                                  <br/>
                                  <small className="ml-2">
-                                    You can socialise with our health bot to learn more health tips 
+                                    chat with Bot for free learning resources and advice on coding 
                                  </small>
                             </div>
-                         
-
                         </Card> 
+                        </Link>
 
                      </Col>
                       {/* third col */}
@@ -67,17 +67,35 @@ const Main_page=()=>{
                             <div>
                                <MdChatBubble/>
                                <small className="titleName ml-2">
-                                    CHAT WITH HEALTH BOT
+                                    TRENDING DEVELOPERS ARTICLES
                                  </small>  
                                  <br/>
                                  <small className="ml-2">
-                                    You can socialise with our health bot to learn more health tips 
+                                    get list of good and trending developers articles 
                                  </small>
                             </div>
-                         
-
                         </Card> 
                      </Col>
+
+                     <Col className="col-12 mt-3 ">
+                        <Card className="features card-1">
+                        <div>
+                            <Link to="share">
+                              <FaUserNurse/>
+                              <small className="ml-2 titleName">
+                                SHARE WITH OTHERS
+                              </small>
+                              <br/>
+                              <small>
+                                Share your learning resources with others , and also see some learning resources 
+                            </small>
+                            </Link>
+
+                        </div>
+                        </Card>   
+                    </Col>
+
+
                   </Row>
 
 
@@ -91,14 +109,23 @@ const Main_page=()=>{
                     <h3 onClick={close}>&times;</h3>
                      <ul>
                       
+                      <Link to="more">
                        <li> Meet</li>
+                      </Link>
                        <li> Connect </li>
-                       <li> Chat </li>
-                       <li> About</li>
+                        <Link to="bot">
+                          <li> Chat </li>
+                        </Link>
+                      <Link to="share">
+                        <li> Share with</li>
+                      </Link>
+                    
                      </ul>
                   </div>
+
+                 
                   <header>
-                      <h6 onClick={()=>setOpen('block')}><BiMenuAltLeft/></h6>
+                      <h6 onClick={()=>setOpen('block')} className="click"><BiMenuAltLeft/></h6>
                   </header>
                   <Container className="mt-5">
                       <Row>
@@ -123,13 +150,14 @@ const Main_page=()=>{
                           <Col className="col-6">
                           <Card>
                           <CardBody className="text-center">
-                            <CardTitle>
-                                <span className="emo"> 
-                                  <MdLocalHospital/>
-                                </span> <br/>
-                                <small className="text-muted">Connect with a Doctor </small>
-                            </CardTitle>
-                        
+                            <Link to="doctor">
+                              <CardTitle>
+                                  <span className="emo"> 
+                                    <MdLocalHospital/>
+                                  </span> <br/>
+                                  <small className="text-muted">Connect with other devs  </small>
+                              </CardTitle>
+                            </Link>
                           </CardBody>
                         </Card>
                         </Col>
@@ -139,12 +167,15 @@ const Main_page=()=>{
                       <Row>
                       <Col className="col-12 mt-3">
                           <Card>
-                          <CardBody className="text-center">
-                            <CardTitle>
-                              Chat bot
-                            </CardTitle>
-                            <CardText>chat with bot</CardText>
-                          </CardBody>
+                            <Link to="more">
+                              <CardBody className="text-center">
+                              <CardTitle>
+                                Chat bot
+                              </CardTitle>
+                              <CardText>See trending articles </CardText>
+                            </CardBody>
+                            </Link>
+
                         </Card>
                         </Col>
                       </Row>

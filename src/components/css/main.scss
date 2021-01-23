@@ -36,6 +36,8 @@ header {
     border-radius: 0 0 25px 25px;
     color: white;
 }
+
+
  h6 {
      font-size: 3em;
      cursor: pointer;
@@ -127,6 +129,7 @@ header {
     opacity: 0.9;
     transition: ease-in 2.5s;
     transition-delay: 4s;
+    backdrop-filter: blur(90px);
     //display: none;
 
        ul {
@@ -177,17 +180,81 @@ header {
         color: white;
         float: left;
         clear: both;
-        background-color: #3be424c5;
+        background-color: rgba(114, 114, 114, 0.486);
         width: auto;
         padding-right: 1em;
         padding-left: 1em;
         border-radius: 8px;
         margin-top: 6px;
     }
-/* on small phones hide the other columns */
+    .svg {
+        cursor: pointer;
+    }
+
+    //doctor part 
+    .head {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5em 1em;
+    }
+    //doctor block
+    #doctor {
+        background-color: $col4;
+        backdrop-filter: blur(50px);
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    //meet people 
+    .meet {
+        
+        position: fixed;
+        top: 0;
+    }
+    //cad 
+    .cad .card {
+        height: 9em;
+        margin-top: 3em;
+        cursor: pointer;
+        box-shadow: 1px 3px 5px rgba(128, 128, 128, 0.192);
+        
+    }
+    .down {
+        margin-top: 2em;
+        height: 8em;
+        background-color: rgba(47, 77, 209, 0.541);
+        backdrop-filter: blur(40px);
+        color: white;
+        box-shadow: 1px 1px 8px 1px rgba(128, 128, 128, 0.589);
+    }
+    //error part 
+    .err {
+        color: red;
+    }
+    //sucess
+    .loadMsg {
+        color: green;
+    }
+    
+    //footer btn
+    .upload-btn{
+        color: red;
+        right: 2em;
+    }
+
+    label {
+        font-weight: bold;
+        float: right;
+        right: 4em;
+    }
+
+    /* on small phones hide the other columns */
 @media screen  and (min-width:200px) and (max-width:600px) {
     .first, .last {
         display: none;
+    }
+    .click {
+        color: yellow;
     }
    
 }
