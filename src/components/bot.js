@@ -12,6 +12,8 @@ const Bot=()=>{
     let [ask , setAsk]=useState('')
     let [hide ,setHide ]=useState('none')
     let [chaty,setChaty]=useState('')
+    let [machine , setMachine]=useState('none')
+    let [details , setDetails]=useState('block')
        let run=()=>{
             setAsk(localStorage.getItem('name'))
 
@@ -109,6 +111,9 @@ const Bot=()=>{
   //code resources part 
   const resource=e=>{
       human('i want some coding resources ')
+    /* first of all hide the details of the first button and show the contents of the second buttons  */
+        setDetails('none')
+        setMachine('block')
       const give=['wow great , learning is always cool , place click on the kind field you want below ',' wow we both can learn together click the buttons below to choose the field you want resources on ']
         const dis=give[Math.floor(Math.random()*give.length)];
         //now display it as the bot reply 
@@ -158,15 +163,16 @@ const Bot=()=>{
                         <footer>
                                 
                                 <div className="ml">
-                                 <span className="details">
+                                 <span className="details" style={{display:details}}>
                                         <Button className="mr-2" color="info">  Minify code  </Button>
                                         <Button className="mr-2" color="info" onClick={resource}> Code resource </Button>
                                         <Button id="chat" onClick={clean} style={{display:chaty}} color="info">Chat with me </Button>
                                     
                                 </span>
-                                <div>
-                                    <Button>Back end resources </Button>
-                                    <Button>ML R</Button>
+                                <div style={{display:machine}} className="text-center" >
+                                    <Button className="mr-2">Back end </Button>
+                                    <Button className="mr-2">Front End </Button>
+                                    <Button className="mr-2">MLH</Button>
                                 </div>
                             </div>
                                 
