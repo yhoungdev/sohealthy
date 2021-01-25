@@ -68,7 +68,7 @@ const Bot=()=>{
                         }else if(val.match(/hi|hey|whats up/)){
                             botReply('lets get to work')
                         } else {
-                            const msg=['i am very gathering some resources for you at the moment ',' click the buttons   below to see some learning resources '];
+                            const msg=['i am very gathering some resources for you at the moment, to see it click on the buttons below ',' click the buttons   below to see some learning resources '];
                                 const randi=msg[Math.floor(Math.random()*msg.length)]
                             botReply(randi)
                             setHide('none')
@@ -106,6 +106,14 @@ const Bot=()=>{
  
   }
   //end of handle 
+  //code resources part 
+  const resource=e=>{
+      human('i want some coding resources ')
+      const give=['wow great , learning is always cool , place click on the kind field you want below ',' wow we both can learn together click the buttons below to choose the field you want resources on ']
+        const dis=give[Math.floor(Math.random()*give.length)];
+        //now display it as the bot reply 
+        setTimeout(()=>botReply(dis),1500)
+    }
 
 
     return (
@@ -148,16 +156,20 @@ const Bot=()=>{
 
 
                         <footer>
-                            <span className="details text-center">
-                                    <Button className="mr-2">  Health tips  </Button>
-                                    <Button className="mr-2"> Code resource </Button>
-                                    <Button id="chat" onClick={clean} style={{display:chaty}}>Chat with me </Button>
                                 
-                            </span>
-                            <div>
-                                <Button>Back end resources </Button>
-                                <Button>ML R</Button>
+                                <div className="ml">
+                                 <span className="details">
+                                        <Button className="mr-2" color="info">  Minify code  </Button>
+                                        <Button className="mr-2" color="info" onClick={resource}> Code resource </Button>
+                                        <Button id="chat" onClick={clean} style={{display:chaty}} color="info">Chat with me </Button>
+                                    
+                                </span>
+                                <div>
+                                    <Button>Back end resources </Button>
+                                    <Button>ML R</Button>
+                                </div>
                             </div>
+                                
                             <Form onSubmit={e=>e.preventDefault()} style={{display:hide}}>
                                 <Input className="inbox"/>          
                                 <RiSendPlane2Fill/>
