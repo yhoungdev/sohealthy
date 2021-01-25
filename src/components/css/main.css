@@ -170,22 +170,21 @@ footer .inbox {
   clear: both;
   background-color: #7077f0c5;
   width: auto;
-  padding-right: 1em;
-  padding-left: 1em;
+  padding: 0.5em 1em;
   border-radius: 8px;
-  margin-top: 6px;
+  margin-top: 2em;
 }
 
-.res {
-  color: white;
+.red {
   float: left;
   clear: both;
-  background-color: rgba(114, 114, 114, 0.486);
+  background-color: rgba(128, 128, 128, 0.507);
   width: auto;
-  padding-right: 1em;
-  padding-left: 1em;
+  padding: 1em 1em;
   border-radius: 8px;
   margin-top: 6px;
+  font-size: 14px;
+  margin-top: 2em;
 }
 
 .svg {

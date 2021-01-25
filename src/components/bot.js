@@ -36,7 +36,8 @@ const Bot=()=>{
             let wr=document.createTextNode(asap)
              hello.appendChild(wr)
              app.appendChild(hello)
-             hello.classList.add('res')
+             hello.classList.add('red')
+             
            
          }
          
