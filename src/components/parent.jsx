@@ -6,7 +6,8 @@ import { HiChatAlt2 } from "react-icons/hi";
 import { MdLocalHospital } from "react-icons/md";
 import { BiMenuAltLeft } from "react-icons/bi";
 import { FaUserNurse } from "react-icons/fa";
-import {MdChatBubble} from "react-icons/md"
+import {MdChatBubble} from "react-icons/md";
+import {RiArticleFill} from 'react-icons/ri'
 
 const Main_page=()=>{
   //get the element of sidebar and show it 
@@ -170,7 +171,7 @@ const Main_page=()=>{
                             <Link to="more">
                               <CardBody className="text-center">
                               <CardTitle>
-                                Chat bot
+                                <RiArticleFill/>
                               </CardTitle>
                               <CardText>See trending articles </CardText>
                             </CardBody>

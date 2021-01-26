@@ -1,264 +1,288 @@
-
-$col:#3D42AD;
-$color2:#191B47;
-$col3:#2F3487;
-$col4:#3D42AD;
-$bg:rgba(128, 128, 128, 0.507);
-
+$special: #7077f0c5;
+$col: #3d42ad;
+$color2: #191b47;
+$col3: #2f3487;
+$col4: #3d42ad;
+$bg: rgba(128, 128, 128, 0.507);
+.details {
+  display: flex;
+}
 .hold {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    
-    .middle {
-        font-size: 20px;
-         
-        .btn {
-            margin: 1.5em;
-            padding: 1em;
-            background-color: $col;
-            width:50%;
-            
-            
-        }
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  .middle {
+    font-size: 20px;
+
+    .btn {
+      margin: 1.5em;
+      padding: 1em;
+      background-color: $col;
+      width: 50%;
     }
+  }
 }
 .middles {
-    height: 100vh;
-   // border: 1px solid grey;
+  height: 100vh;
+  // border: 1px solid grey;
 
-    //header part 
-header {
+  //header part
+  header {
     background-color: $col4;
     height: 18em;
     border-radius: 0 0 25px 25px;
     color: white;
-}
+  }
 
-
- h6 {
-     font-size: 3em;
-     cursor: pointer;
- }
- .emo {
+  h6 {
+    font-size: 3em;
+    cursor: pointer;
+  }
+  .emo {
     font-size: 35px;
- }
+  }
 }
 
 .top {
-    background-color: $col4;
-
-    div {
-        display: flex;
-        justify-content: space-between;
-        padding:1em;
-        color: white;
-        
-    }
-}
-//now for the bot msg 
-.botMsg {
-    background-color: $bg;
-    border-radius: 4px;
-    width: 40%;
-    margin-top: 1em;
-    padding: 1em;
-    font-weight: 500;
-    font-size: 16px;
-}
-
-//features 
-.features {
-    padding: 3em 1em;
-    box-shadow: 2px 3px 9px  rgba(165, 165, 165, 0.267);
+  background-color: rebeccapurple;
+  border-radius: 2.5em 2.5px 0 0;
  
+  div {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    color: white;
+  }
+}
+//now for the bot msg
+.botMsg {
+  background-color: $bg;
+  border-radius: 4px;
+  width: 40%;
+  margin-top: 3em;
+  padding: 1em;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+//features
+.features {
+  padding: 3em 1em;
+  box-shadow: 2px 3px 9px rgba(165, 165, 165, 0.267);
 }
 
 .card-1 {
-   color:grey;
-   border-radius: 15px;
-   .titleName {
+  color: grey;
+  border-radius: 15px;
+  .titleName {
     font-weight: 450;
     font-size: 16px;
     color: green;
     font-weight: 500;
-    
-    }
-    svg {
-        font-size: 28px;
-        color: green;
-    }
+  }
+  svg {
+    font-size: 28px;
+    color: green;
+  }
 }
 .card-2 {
-   color: rgba(0, 0, 255, 0.137);
-    border-radius: 18px;
-   svg {
-    font-size: 28px;  
-    color: #191B47; 
- }
- .titleName {
-     color: #191B47;
-     font-weight:500;
- }
+  color: rgba(0, 0, 255, 0.137);
+  border-radius: 18px;
+  svg {
+    font-size: 28px;
+    color: #191b47;
+  }
+  .titleName {
+    color: #191b47;
+    font-weight: 500;
+  }
 }
 
 .parent {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .card {
-    box-shadow: 2px 3px 9px  rgba(165, 165, 165, 0.267);
-    border-radius: 18px;
-    
+  box-shadow: 2px 3px 9px rgba(165, 165, 165, 0.267);
+  border-radius: 18px;
 }
-//side bar 
-
+//side bar
 
 .sidebar {
-    background-color: $color2;
-    position: absolute;
-    left: 0;
-    width: 40%;
-    height: 100vh;
-    z-index: 1;
+  background-color: $color2;
+  position: absolute;
+  left: 0;
+  width: 40%;
+  height: 100vh;
+  z-index: 1;
+  color: white;
+  padding-left: 1em;
+  padding-top: 2em;
+  opacity: 0.9;
+  transition: ease-in 2.5s;
+  transition-delay: 4s;
+  backdrop-filter: blur(90px);
+  //display: none;
+
+  ul {
+    list-style-type: none;
+
+    li {
+      margin-top: 9em;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  }
+  //now for the cancel button
+  h3 {
     color: white;
-    padding-left: 1em;
-    padding-top: 2em;
-    opacity: 0.9;
-    transition: ease-in 2.5s;
-    transition-delay: 4s;
-    backdrop-filter: blur(90px);
-    //display: none;
-
-       ul {
-           list-style-type:none;
-
-           li {
-               margin-top: 9em;
-               cursor:pointer;
-               font-weight: bold;
-           }
-       }
-       //now for the cancel button
-       h3 {
-           color: white;
-           font-size: 25px;
-           font-weight: bold;
-           float: right;
-           padding-right: 1em;
-           cursor: pointer;
-       }
+    font-size: 25px;
+    font-weight: bold;
+    float: right;
+    padding-right: 1em;
+    cursor: pointer;
+  }
 }
 //now this is the footer aspect
 
-    footer {
-        position: fixed;
-        bottom: 0;
-        padding-bottom: 1em;
+footer {
+  position: fixed;
+  bottom: 0%;
 
-        .inbox{
-            width: 25em;
-        }
-    }
+  .inside {
+    position: absolute;
+    bottom: 0%;
+  }
 
-    .mess {
-        color: white;
-        float: right;
-        clear: both;
-        background-color: #7077f0c5;
-        width: auto;
-        padding: 0.5em 1em;
-        border-radius: 8px;
-        margin-top: 2em;
-        
-    }
+  .inbox {
+    width: 25em;
+  }
+  h5 {
+     position: absolute;
+     top: 47px;
+     right: 1em;
+     cursor: pointer;
+     font-size: 22px;
+     color: $special;
+  }
+}
 
-    .red{
-        
-        float: left;
-        clear: both;
-        background-color: $bg;
-        width: auto;
-        padding: 1em 1em;
-        border-radius: 8px;
-        margin-top: 6px;
-        font-size: 14px;
-        margin-top: 2em;
+.mess {
+  color: white;
+  float: right;
+  clear: both;
+  background-color: #7077f0c5;
+  width: auto;
+  padding: 0.5em 1em;
+  border-radius: 8px 8px 0 8px;
+  margin-top: 2em;
+}
 
-        
-    } 
+.red {
+  float: left;
+  clear: both;
+  background-color: $bg;
+  width: auto;
+  padding: 1em 1em;
+  border-radius: 8px 8px 8px 0;
+  margin-top: 6px;
+  font-size: 14px;
+  margin-top: 2em;
+}
 
+.svg {
+  cursor: pointer;
+}
 
-    .svg {
-        cursor: pointer;
-    }
+//doctor part
+.head {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 1em;
+}
+//doctor block
+#doctor {
+  background-color: $col4;
+  backdrop-filter: blur(50px);
+  margin-bottom: 20px;
+  color: white;
+}
 
-    //doctor part 
-    .head {
-        display: flex;
-        justify-content: space-between;
-        padding: 0.5em 1em;
-    }
-    //doctor block
-    #doctor {
-        background-color: $col4;
-        backdrop-filter: blur(50px);
-        margin-bottom: 20px;
-        color: white;
-    }
+//meet people
+.meet {
+  position: fixed;
+  top: 0;
+}
+//cad
+.cad .card {
+  height: 9em;
+  margin-top: 3em;
+  cursor: pointer;
+  box-shadow: 1px 3px 5px rgba(128, 128, 128, 0.192);
+}
+.down {
+  margin-top: 2em;
+  height: 8em;
+  background-color: rgba(47, 77, 209, 0.541);
+  backdrop-filter: blur(40px);
+  color: white;
+  box-shadow: 1px 1px 8px 1px rgba(128, 128, 128, 0.589);
+}
+//error part
+.err {
+  color: red;
+}
+//sucess
+.loadMsg {
+  color: green;
+}
 
-    //meet people 
-    .meet {
-        
-        position: fixed;
-        top: 0;
-    }
-    //cad 
-    .cad .card {
-        height: 9em;
-        margin-top: 3em;
-        cursor: pointer;
-        box-shadow: 1px 3px 5px rgba(128, 128, 128, 0.192);
-        
-    }
-    .down {
-        margin-top: 2em;
-        height: 8em;
-        background-color: rgba(47, 77, 209, 0.541);
-        backdrop-filter: blur(40px);
-        color: white;
-        box-shadow: 1px 1px 8px 1px rgba(128, 128, 128, 0.589);
-    }
-    //error part 
-    .err {
-        color: red;
-    }
-    //sucess
-    .loadMsg {
-        color: green;
-    }
-    
-    //footer btn
-    .upload-btn{
-        color: red;
-        right: 2em;
-    }
+//footer btn
+.upload-btn {
+  color: red;
+  right: 2em;
+}
 
-    label {
-        font-weight: bold;
-        float: right;
-        right: 4em;
-    }
+label {
+  font-weight: bold;
+  float: right;
+  right: 4em;
+}
 
-    /* on small phones hide the other columns */
-@media screen  and (min-width:200px) and (max-width:600px) {
-    .first, .last {
-        display: none;
+.click {
+  color: white;
+  display: none;
+}
+
+/* on small phones hide the other columns */
+@media screen and (min-width: 200px) and (max-width: 600px) {
+  .first,
+  .last {
+    display: none;
+  }
+  .click {
+    color: white;
+    display: block;
+  }
+  .top {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    margin: 0%;
+    width: 100%;
+    height: 50px;
+    h4 {
+      color: $special;
     }
-    .click {
-        color: yellow;
+    a {
+      color: $special;
     }
-   
+    h6 {
+      color: $special;
+    }
+  }
+
 }

@@ -5,6 +5,7 @@ import { BiMenuAltLeft } from "react-icons/bi";
 import {MdArrowBack} from "react-icons/md";
 import {RiSendPlane2Fill} from "react-icons/ri";
 import {Link } from 'react-router-dom';
+import {MdSettings} from 'react-icons/md'
 
 
 const Bot=()=>{
@@ -34,6 +35,7 @@ const Bot=()=>{
         const botReply=(asap)=>{
             let hello=document.createElement('p');
             let wr=document.createTextNode(asap)
+            
              hello.appendChild(wr)
              app.appendChild(hello)
              hello.classList.add('red')
@@ -60,7 +62,8 @@ const Bot=()=>{
                 if(val.length!==0) {
                     human(inbox.value)   
                     let mail=/[a-zA-Z0-9]\@gmail\.com/
-                    //set the input box back to emptys
+                    //set the input box back to empty
+                    let ref=`<a href="mailto:${inbox.val}">sent</a>`
            
                     setTimeout(()=>{
                         
@@ -121,8 +124,41 @@ const Bot=()=>{
         setTimeout(()=>botReply(dis),1500)
     }
 
+//back end
+ const back=()=>{
+     human('i need back end resources ');
+     const bak=['prossing your request pleasae wait for some time ','please wait , be patient'];
+        const ra=bak[Math.floor(Math.random()*bak.length)]
+        setTimeout(()=>  botReply(ra),1500)
+        setTimeout(()=>{
+            botReply('click on me')
+        },4200 )
+    }
 
+    //front end developement
+    const front=()=>{
+        human('i need front end resources ');
+        const bak=['prossing your request pleasae wait for some time ','please wait , be patient'];
+           const ra=bak[Math.floor(Math.random()*bak.length)]
+           setTimeout(()=>  botReply(ra),1500)
+           setTimeout(()=>{
+               botReply('click on me')
+           },4200 )
+       }
+
+       //resoources on AI 
+       const ai=()=>{
+        human('i need resources on AI ( ML and DL)');
+        const bak=['prossing your request pleasae wait for some time ','please wait , be patient'];
+           const ra=bak[Math.floor(Math.random()*bak.length)]
+           setTimeout(()=>  botReply(ra),1500)
+           setTimeout(()=>{
+               botReply(`resource URL is loading `) 
+           },4200 )
+           setTimeout(()=>window.location='https://google.com' ,6500)
+       }
     return (
+
         <>
             <Row>
                 <Col className="col-12 col-md-6 col-xl-6">
@@ -142,49 +178,61 @@ const Bot=()=>{
                                     </h2>
 
                                   
-                                    <h3>{ask}</h3>
                                 </span>
+                                <h6>{ask}</h6>
                                 <span>
-                                      <BiMenuAltLeft/>
+                                      <h4><MdSettings/></h4>
                                 </span>
                             </div>
                     </header>
                     <Container>
+                        <div className="ova">
                         <div className="botMsg">
                             <small>Hello i am Truthy your new friend , so what do you want me to do for you today?</small>
                         </div>
+                            <div className='go'>
                             <div>
                                     <div className="msgs">
                                 </div>
                                 <div className="res">
                                 </div>
                             </div>
-
-
-                        <footer>
-                                
-                                <div className="ml">
-                                 <span className="details" style={{display:details}}>
-                                        <Button className="mr-2" color="info">  Minify code  </Button>
-                                        <Button className="mr-2" color="info" onClick={resource}> Code resource </Button>
-                                        <Button id="chat" onClick={clean} style={{display:chaty}} color="info">Chat with me </Button>
-                                    
-                                </span>
-                                <div style={{display:machine}} className="text-center" >
-                                    <Button className="mr-2">Back end </Button>
-                                    <Button className="mr-2">Front End </Button>
-                                    <Button className="mr-2">MLH</Button>
-                                </div>
                             </div>
+
+
+                        
+                            <footer>
                                 
-                            <Form onSubmit={e=>e.preventDefault()} style={{display:hide}}>
-                                <Input className="inbox"/>          
-                                <RiSendPlane2Fill/>
-                                <button onClick={user} id="btn">click</button>               
-                              </Form>
-                        </footer>
+                                <div className="inside">
+                                <div className="ml" >
+                                    <div style={{display:details}}>
+                                    <span className="details" >
+                                          <Button className="mr-2" color="info" >  Minify code  </Button>
+                                          <Button className="mr-2" color="info" onClick={resource}> Code resource </Button>
+                                          <Button id="chat" onClick={clean} style={{display:chaty}} color="info">Chat with me </Button>
+                                      
+                                  </span>
+                                    </div>
+
+                                  <div style={{display:machine}} className="text-center" >
+                                      <Button className="mr-2" onClick={back}>Back end </Button>
+                                      <Button className="mr-2" onClick={front}>Front End </Button>
+                                      <Button className="mr-2" onClick={ai}>MLH</Button>
+                                  </div>
+                              </div>
+                                  
+                              <Form onSubmit={e=>e.preventDefault()} style={{display:hide}} className="foot">
+                                  <Input className="inbox"/>          
+                                 <h5> <RiSendPlane2Fill onClick={user} id="btn"/></h5>
+                                  {/* <button id="btn" onClick={user} >click</button>                */}
+                                </Form>
+                                </div>
+                          </footer>
+                        </div>
+                     
 
                     </Container>
+                    
 
                 </Col>
             </Row>

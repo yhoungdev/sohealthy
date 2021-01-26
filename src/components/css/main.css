@@ -1,3 +1,9 @@
+.details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .hold {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19,7 +25,7 @@
 .hold .middle .btn {
   margin: 1.5em;
   padding: 1em;
-  background-color: #3D42AD;
+  background-color: #3d42ad;
   width: 50%;
 }
 
@@ -28,7 +34,7 @@
 }
 
 .middles header {
-  background-color: #3D42AD;
+  background-color: #3d42ad;
   height: 18em;
   border-radius: 0 0 25px 25px;
   color: white;
@@ -44,7 +50,8 @@
 }
 
 .top {
-  background-color: #3D42AD;
+  background-color: rebeccapurple;
+  border-radius: 2.5em 2.5px 0 0;
 }
 
 .top div {
@@ -62,7 +69,7 @@
   background-color: rgba(128, 128, 128, 0.507);
   border-radius: 4px;
   width: 40%;
-  margin-top: 1em;
+  margin-top: 3em;
   padding: 1em;
   font-weight: 500;
   font-size: 16px;
@@ -98,11 +105,11 @@
 
 .card-2 svg {
   font-size: 28px;
-  color: #191B47;
+  color: #191b47;
 }
 
 .card-2 .titleName {
-  color: #191B47;
+  color: #191b47;
   font-weight: 500;
 }
 
@@ -117,7 +124,7 @@
 }
 
 .sidebar {
-  background-color: #191B47;
+  background-color: #191b47;
   position: absolute;
   left: 0;
   width: 40%;
@@ -156,12 +163,25 @@
 
 footer {
   position: fixed;
-  bottom: 0;
-  padding-bottom: 1em;
+  bottom: 0%;
+}
+
+footer .inside {
+  position: absolute;
+  bottom: 0%;
 }
 
 footer .inbox {
   width: 25em;
+}
+
+footer h5 {
+  position: absolute;
+  top: 47px;
+  right: 1em;
+  cursor: pointer;
+  font-size: 22px;
+  color: #7077f0c5;
 }
 
 .mess {
@@ -171,7 +191,7 @@ footer .inbox {
   background-color: #7077f0c5;
   width: auto;
   padding: 0.5em 1em;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 8px;
   margin-top: 2em;
 }
 
@@ -181,7 +201,7 @@ footer .inbox {
   background-color: rgba(128, 128, 128, 0.507);
   width: auto;
   padding: 1em 1em;
-  border-radius: 8px;
+  border-radius: 8px 8px 8px 0;
   margin-top: 6px;
   font-size: 14px;
   margin-top: 2em;
@@ -202,7 +222,7 @@ footer .inbox {
 }
 
 #doctor {
-  background-color: #3D42AD;
+  background-color: #3d42ad;
   -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);
   margin-bottom: 20px;
@@ -252,13 +272,37 @@ label {
   right: 4em;
 }
 
+.click {
+  color: white;
+  display: none;
+}
+
 /* on small phones hide the other columns */
 @media screen and (min-width: 200px) and (max-width: 600px) {
-  .first, .last {
+  .first,
+  .last {
     display: none;
   }
   .click {
-    color: yellow;
+    color: white;
+    display: block;
+  }
+  .top {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    margin: 0%;
+    width: 100%;
+    height: 50px;
+  }
+  .top h4 {
+    color: #7077f0c5;
+  }
+  .top a {
+    color: #7077f0c5;
+  }
+  .top h6 {
+    color: #7077f0c5;
   }
 }
 /*# sourceMappingURL=main.css.map */
