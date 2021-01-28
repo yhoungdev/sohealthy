@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import './css/main.css';
-import { Container , Row , Col , Button  , Badge , Card ,CardText, CardFooter , CardTitle , CardBody} from 'reactstrap'
+import { Container , Row , Col , Button  , Badge , Card ,CardText, CardFooter , CardTitle , CardBody , Breadcrumb , BreadcrumbItem} from 'reactstrap'
 import { Link } from 'react-router-dom';
 import { HiChatAlt2 } from "react-icons/hi";
 import { MdLocalHospital } from "react-icons/md";
@@ -28,73 +28,50 @@ const Main_page=()=>{
                     <h4 className="text-center">FEATURES</h4>
                   <Row>
                      <Col className="col-12 ">
-                        <Link to="doctor">
-                        <Card className="features card-1">
-                        <div>
-                            <FaUserNurse/>
-                            <small className="ml-2 titleName">
-                              CONNECT WITH OTHER DEVELOPERS 
-                            </small>
-                            <br/>
-                            <small>
-                               Meet and connect with people with like mind around the world 
-                            </small>
-
-                        </div>
-                        </Card>  
-                          </Link> 
+                       <Breadcrumb >
+                          <Link to="more">
+                            <BreadcrumbItem className="bread">
+                            <h5 className='text-muted'>MEET OTHER DEVELOPERS </h5>
+                            <small className="text-muted">meet new developers around</small>
+                          </BreadcrumbItem>
+                          </Link>
+                       </Breadcrumb>
                     </Col>
                           {/* other col */}
                      <Col className="col-12 mt-3">
+                      <Breadcrumb >
                         <Link to="bot">
-                        <Card className="features card-2">
-                            <div>
-                               <MdChatBubble/>
-                               <small className="titleName ml-2">
-                                    CHAT WITH  BOT
-                                 </small>  
-                                 <br/>
-                                 <small className="ml-2">
-                                    chat with Bot for free learning resources and advice on coding 
-                                 </small>
-                            </div>
-                        </Card> 
+                        <BreadcrumbItem className="bread">
+                            <h4>Chat with learning Bot </h4>
+                            <small className="text-muted">Chat and get learning resource</small>
+                        </BreadcrumbItem>
+                        
                         </Link>
+                      </Breadcrumb>
 
                      </Col>
                       {/* third col */}
                      <Col className="col-12 mt-3 last">
-                        <Card className="features card-2">
-                            <div>
-                               <MdChatBubble/>
-                               <small className="titleName ml-2">
-                                    TRENDING DEVELOPERS ARTICLES
-                                 </small>  
-                                 <br/>
-                                 <small className="ml-2">
-                                    get list of good and trending developers articles 
-                                 </small>
-                            </div>
-                        </Card> 
+                       <Breadcrumb >
+                          <Link to='share'>
+                            <BreadcrumbItem className="bread">
+                            <h5 className="text-muted">SHARE WITH DEVS </h5>
+
+                            <small className="text-muted">Share your learning resources with other developers around the globe </small>
+                          </BreadcrumbItem>
+                          </Link>
+
+                       </Breadcrumb>
                      </Col>
 
-                     <Col className="col-12 mt-3 ">
-                        <Card className="features card-1">
-                        <div>
-                            <Link to="share">
-                              <FaUserNurse/>
-                              <small className="ml-2 titleName">
-                                SHARE WITH OTHERS
-                              </small>
-                              <br/>
-                              <small>
-                                Share your learning resources with others , and also see some learning resources 
-                            </small>
-                            </Link>
-
-                        </div>
-                        </Card>   
-                    </Col>
+                     {/* <Col className="col-12 mt-3 ">
+                      <Breadcrumb >
+                        <BreadcrumbItem className="bread">
+                            <h6 className="text-muted">SEE TRENDING ARTICLES </h6>
+                            <small className="text-muted">see list of trending articles by other developers </small>
+                        </BreadcrumbItem>
+                      </Breadcrumb>
+                    </Col> */}
 
 
                   </Row>
@@ -131,7 +108,7 @@ const Main_page=()=>{
                   <Container className="mt-5">
                       <Row>
                         <Col className="col-6">
-                          <Card>
+                           <Card>
                             <Link to="bot">
                                 <CardBody className="text-center">
                                 <CardTitle>
@@ -144,7 +121,8 @@ const Main_page=()=>{
                                
                               </CardBody>
                             </Link>
-                        </Card>
+                        </Card> 
+                      
                         </Col>
 
                           {/* second col */}
@@ -186,7 +164,7 @@ const Main_page=()=>{
               </Col>
              {/* third col */}
              <Col className="col-12 col-md-4 col-xl-4">
-                  right
+                  
               </Col>
           </Row>
           

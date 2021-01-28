@@ -4,6 +4,10 @@
   display: flex;
 }
 
+.bread {
+  padding: 2em 0;
+}
+
 .hold {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -34,7 +38,7 @@
 }
 
 .middles header {
-  background-color: #3d42ad;
+  background-color: #4147b3c5;
   height: 18em;
   border-radius: 0 0 25px 25px;
   color: white;
@@ -50,7 +54,7 @@
 }
 
 .top {
-  background-color: rebeccapurple;
+  background-color: #4147b3c5;
   border-radius: 2.5em 2.5px 0 0;
 }
 
@@ -66,7 +70,7 @@
 }
 
 .botMsg {
-  background-color: rgba(128, 128, 128, 0.507);
+  background-color: #e9ecef;
   border-radius: 4px;
   width: 40%;
   margin-top: 3em;
@@ -93,11 +97,6 @@
   font-weight: 500;
 }
 
-.card-1 svg {
-  font-size: 28px;
-  color: green;
-}
-
 .card-2 {
   color: rgba(0, 0, 255, 0.137);
   border-radius: 18px;
@@ -118,9 +117,9 @@
 }
 
 .card {
-  -webkit-box-shadow: 2px 3px 9px rgba(165, 165, 165, 0.267);
-          box-shadow: 2px 3px 9px rgba(165, 165, 165, 0.267);
   border-radius: 18px;
+  background-color: #e9ecef;
+  border: none;
 }
 
 .sidebar {
@@ -198,7 +197,7 @@ footer h5 {
 .red {
   float: left;
   clear: both;
-  background-color: rgba(128, 128, 128, 0.507);
+  background-color: #e9ecef;
   width: auto;
   padding: 1em 1em;
   border-radius: 8px 8px 8px 0;

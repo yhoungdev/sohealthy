@@ -17,6 +17,8 @@ const Share=()=>{
 
                     //now set the msg for the uploaaded files 
                     setUpload(fileTo.name)
+                    let storageRef=firebase.storagage().ref(`uploads/${fileTo}`)
+                    let store=storageRef.put(fileTo.name)
 
                     //now upload to firebase 
 
